@@ -4,6 +4,13 @@ This repository enables a bot to control the client externally in an environment
 The bot sends a download request to the server side and posts the obtained replay file. 
 As a result, users whose replay files are corrupted and unviewable can obtain and view a normal replay file through the bot
 
+## Installation
+Before running the bot, you need to install the necessary modules.  
+```shell
+pip install -r requirements.txt
+```
+In certain operating systems, you may need to use the command pip3 instead of pip for installation
+
 ## Setup Instructions
 
 1.Create a .env file  
