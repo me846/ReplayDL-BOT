@@ -71,7 +71,7 @@ class ReplayDownloader(commands.Cog):
 
     def find_lol_client(self):
         for process in psutil.process_iter(['pid', 'name']):
-            if "leagueclient.exe" in process.info['name']:
+            if "LeagueClient.exe" in process.info['name']:
                 return process
         return None
 
