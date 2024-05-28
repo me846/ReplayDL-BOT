@@ -8,7 +8,7 @@ a = Analysis(
     binaries=[],
     datas=[
         ('config.ini', '.'),
-        ('cogs', 'cogs'),
+        ('cogs/*', 'cogs'),
         ('src/Check_Client.py', 'src'),
     ],
     hiddenimports=[
