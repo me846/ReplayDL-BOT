@@ -64,7 +64,10 @@ class ReplayDownloader(commands.Cog):
             timeout -= 1
 
     def read_lockfile(self):
-        lockfile_path = "C:/Riot Games/League of Legends/lockfile"
+        client_process = self.find_lol_client()
+        if client_process:
+            base_folder = os.path.dirname(client_process.exe())
+            lockfile_path = os.path.join(base_folder, "lockfile")
         try:
             with open(lockfile_path, "r") as file:
                 data = file.read().strip().split(':')
